@@ -1,8 +1,9 @@
 const year = document.querySelector("#currentyear");
-const firstParagraph = document.querySelector
+const firstParagraph = document.querySelector("p")
 
 const today = new Date();
 
-year.innerHTML = `&copy ${today.getFullYear()}  🌼 Martha Itohan Otasowie 🌼 Nigeria`;
+year.innerHTML = ` ${today.getFullYear()}  `;
+firstParagraph.innerHTML = `🌼 Martha Itohan Otasowie 🌼 Nigeria`
 
 document.getElementById("lastModified").innerHTML = ` Last Modification: ${ document.lastModified}`;
