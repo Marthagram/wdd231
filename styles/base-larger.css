@@ -23,5 +23,46 @@
         border: none;
     }
 
+    .grouping{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 10px;
+    }
+
+    .part h2{
+        padding: 5px;
+        margin: 0;
+        height: auto;
+        border-radius: 0;
     
+    }
+
+    .second{
+        height: auto;
+    }
+
+    .second img{
+        display: flex;
+        justify-content: center;
+        max-width: 80%;
+        margin: 2em;
+        height: auto;
+        
+    }
+
+    .third{
+        grid-column: 1/3;
+    }
+
+    .button-class{
+        margin: 5em;
+        
+    }
+
+    .button{
+        width: 15em;
+    }
+
+    
+
 }

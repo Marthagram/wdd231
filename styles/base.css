@@ -70,13 +70,68 @@ header span{
     color: rgb(71, 26, 26);
  }
 
+ /* main */
+ 
+main{
+    color: rgb(71, 26, 26);
+    padding: 0 10px;
+}
+
+.part h2{
+    background-color: darkorange;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 2px;
+
+}
+.part{
+    background-color: #ddd;
+    width: 100%;
+    height: auto;
+    margin-top: 3em;
+
+}
+
+.part p{
+    padding: 9px;
+    line-height: 26px;
+}
+.second{
+    height: 320px;
+}
+
+.part img{
+    display: flex;
+    justify-self: center;
+    height: 250px;
+}
+
+.third{
+    height: 300px;
+}
+.button-class{
+   display: flex;
+   justify-content: space-around;
+   height: 50px;
+   
+}
+.button{
+    background-color: rgb(71, 26, 26) ;
+    color: #ddd;
+}
+
+button:hover{
+    background-color: darkorange;
+}
+
  /* footer */
 
  footer{
+    margin-top: 5em;
     color: rgb(71, 26, 26);
     padding: 1rem 10px;
     text-align: center;
-    border-top: 1px solid #ddd;
+    border-top: 2px solid #ddd;
  }
 
  .social{
