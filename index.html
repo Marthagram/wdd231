@@ -1,69 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Martha Itohan Otasowie">
-    <meta description="WDD 231-Homepage">
-    <title>Homepage</title>
-    
-  
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/base-larger.css">
-    <script src="scripts/navigation.js" defer></script>
-     <script src="scripts/date.js" defer></script>
-
-</head>
-<body>
-    <header>
-        <img src="images/home.svg" alt="site logo" width="640" height="640">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Martha Itohan Otasowie">
+        <meta description="WDD 231-Homepage">
+        <title>Homepage</title>
         
-        <span>Martha Itohan Otasowie</span>
-        <button id="ham-btn" class="hamburger"></button>
-    </header>
-        <nav id="nav-bar" class="navigation">
-            <ul>
-                <li class="current"><a href="/">Home</a></li>
-                <li><a href="/">Chamber</a></li>
-                <li><a href="/">Final</a></li>
-            </ul>
-        </nav>
     
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/base-larger.css">
 
-    <main>
-        <h1>Home</h1>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/course.js" defer></script>
 
-        <section>
-            <h2></h2>
-        </section>
-        <section>
-            <h2></h2>
-        </section>
-        <section>
-            <h2></h2>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="social">
-            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16">
-            </a>
+    </head>
+    <body>
+        <header>
+            <img src="images/home.svg" alt="site logo" width="640" height="640">
             
-            <a href="https://github.com/marthagram" target="_blank"><img src="images/github.svg" alt="facebook" width="16" height="16">
-            </a>
-
-            <a href="https://www.linkedin.com/in/marthaotasowie007" target="_blank"><img src="images/linkedin.svg" alt="facebook" width="16" height="16">
-            </a>
-        </div>
-
-        <p>&copy; <span id="currentyear"></span></p>
-
-        <p id="lastModified"></p>
-    
+            <span>Martha Itohan Otasowie</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </header>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li class="current"><a href="/">Home</a></li>
+                    <li><a href="/">Chamber</a></li>
+                    <li><a href="/">Final</a></li>
+                </ul>
+            </nav>
         
-    </footer>
+
+        <main>
+            <h1>Home</h1>
+
+            <section>
+                <h2>
+                    About Me
+                </h2>
+
+                <p>
+                    Hello! My name is Martha Itohan Otasowie, I was born and brought up in Abuja, Nigeria. I am excited to be a part of the WDD 131 - Dynamic Web Fundamentals course
+                    . I have a passion for web development and look forward to enhancing my skills in this field. In my free time, I enjoy reading, 
+                    listening to music and watching inspiring movies.
+                </p>
+
+            </section>
+
+            <section>
+                <h2>
+                   Student Photo 
+                </h2>
+
+                <img src="images/profile.jpg" alt="picture of student" width="200" height="200">
+            </section>
+
+            <section id="third-section">
+                <h2>Web Certificate Courses</h2>
+
+                <button id="all-courses">All Courses</button>
+                <button id="wdd-courses">WDD Courses</button>
+                <button id="cse-courses">CSE Courses</button>
+                <div id="first-container"></div>
+
+            </section>
 
 
-</body>
+        </main>
+
+        <footer>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16">
+                </a>
+                
+                <a href="https://github.com/marthagram" target="_blank"><img src="images/github.svg" alt="facebook" width="16" height="16">
+                </a>
+
+                <a href="https://www.linkedin.com/in/marthaotasowie007" target="_blank"><img src="images/linkedin.svg" alt="facebook" width="16" height="16">
+                </a>
+            </div>
+
+            <p> &copy; <span id="currentyear"></span></p>
+
+            <p id="lastModified"></p>
+        
+            
+        </footer>
+
+
+    </body>
 </html>
