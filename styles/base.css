@@ -78,6 +78,7 @@ header span{
     margin-left: 10px;
     color: rgb(71, 26, 26);
     font-family: Amaranth;
+    text-align: left;
  }
 
  /* main */
@@ -90,9 +91,7 @@ main{
 
 }
 
-main p{
-    font-weight: 2em;
-}
+
 
 .part h2{
     background-color: darkorange;
@@ -112,11 +111,14 @@ main p{
 }
 
 .part p{
-    vertical-align: center;
+    
     padding: 12px;
     line-height: 29px;
     font-size: 1.2em;
     font-family: roboto;
+}
+.first p{
+    text-align: left;
 }
 .second{
     height: 320px;
