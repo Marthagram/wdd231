@@ -82,30 +82,37 @@ const courses = [
 
 // because of the buttons in html, it will be impossible to easily append the courses info in a created div into the section in html, so, a create div in html as well as in JavaScript. To avoid conflicts and infinity looping
 
-function displayCourses(courses){
-    const firstContainer = document.querySelector("#first-container");
-    firstContainer.innerHTML="";
-    courses.forEach(course => {
-      
-        const courseDiv = document.createElement("div");
-        courseDiv.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
-        
-        if (course.completed) {
-            courseDiv.style.backgroundColor = 'darkorange';
-        }
-        
+const firstContainer = document.querySelector("#first-container");
 
-       firstContainer.appendChild(courseDiv);
+function displayCourses(courses){
+    
+   firstContainer.innerHTML="";
+    
+    courses.forEach(course => {
+       
+        const courseDiv = document.createElement("div");
+        courseDiv.className = "second-div";
+        courseDiv.innerHTML="";
+
+        if (course.completed === true){
+            courseDiv.classList.add('completed');
+        }
+
+        courseDiv.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+        firstContainer.appendChild(courseDiv);
+      
     });
     
 };
+
+
 
 // reduce array function method to calculate sum of credits
 function displayTotalCredits(courses) {
   const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
   const creditsDisplay = document.createElement('p');
   creditsDisplay.textContent = `Total Credits: ${totalCredits}`;
-  const firstContainer = document.querySelector("#first-container");
+
   firstContainer.appendChild(creditsDisplay);
 }
 

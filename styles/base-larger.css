@@ -1,5 +1,5 @@
 @media only screen and (min-width: 600px){
-    header, main, footer{
+    header, main,.navigation, footer{
         max-width: 1200px;
         margin: 0 auto;
     } 
@@ -18,9 +18,11 @@
 
     .navigation ul{
         display: flex;
+        
     }
     .navigation a{
         border: none;
+        
     }
 
     .grouping{
@@ -49,13 +51,24 @@
         height: auto;
         
     }
+    
 
     .third{
         grid-column: 1/3;
     }
 
+    #first-container {
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+
     .button-class{
-        margin: 5em;
+        display: flex;
+        margin-top: 2em;
+        gap: 2em;
+        padding: 0 2em;
         
     }
 
