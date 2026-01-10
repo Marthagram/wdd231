@@ -111,7 +111,7 @@ function displayCourses(courses){
 function displayTotalCredits(courses) {
   const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
   const creditsDisplay = document.createElement('p');
-  creditsDisplay.textContent = `Total Credits: ${totalCredits}`;
+  creditsDisplay.textContent = `The total credits for course listed above is ${totalCredits}`;
 
   firstContainer.appendChild(creditsDisplay);
 }

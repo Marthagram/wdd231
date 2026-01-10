@@ -7,6 +7,11 @@ header{
     padding: 5px 0 5px 10px;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
+   
+}
+header, .navigation{
+    font-family: Amaranth,Verdana;
+    font-weight: 700;
 }
 
 header img{
@@ -28,11 +33,15 @@ header span{
 .hamburger::before{
     content: "\2630";
     font-size: 1.5rem;
+    font-family: roboto;
+    font-weight: 900;
 }
 
 .hamburger.show::before{
     content: "\00D7";
     font-size: 2rem;
+    font-family: roboto;
+    font-weight: 900;
 
 }
 /* navigation */
@@ -62,12 +71,13 @@ header span{
 }
 
 .navigation .current{
-    background-color: #ddd;
+    background-color:#ddd ;
 }
 
  h1{
     margin-left: 10px;
     color: rgb(71, 26, 26);
+    font-family: Amaranth;
  }
 
  /* main */
@@ -75,6 +85,13 @@ header span{
 main{
     color: rgb(71, 26, 26);
     padding: 0 10px;
+    text-align: center;
+    font-family: roboto;
+
+}
+
+main p{
+    font-weight: 2em;
 }
 
 .part h2{
@@ -82,6 +99,7 @@ main{
     text-align: center;
     border-radius: 4px;
     padding-top: 2px;
+    font-family: Amaranth;
 
 }
 .part{
@@ -98,6 +116,7 @@ main{
     padding: 12px;
     line-height: 29px;
     font-size: 1.2em;
+    font-family: roboto;
 }
 .second{
     height: 320px;
@@ -110,8 +129,10 @@ main{
 }
 
 .third{
+    background-color: white;
     height: auto;
     text-align: center;
+    
 }
 .button-class{
    display: flex;
@@ -125,6 +146,7 @@ main{
     color: #ddd;
     border-radius: 1em;
     height: 50px;
+    font-family: roboto;
 }
 
 button:hover{
@@ -155,16 +177,16 @@ button:active{
 
 
 
+
  /* footer */
 
  footer{
-    margin-top: 5em;
     color: black;
     padding: 1rem 10px;
     text-align: center;
-    border-top: 3px solid darkorange;
-    background-color: slategray;
     font-size: 1.2em;
+    font-family: roboto;
+
  }
 
  .social{
@@ -177,22 +199,29 @@ button:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 3em;
+    height: 3em;
     border: 1.5px solid rgb(71, 26, 26);
-    border-radius: 20px;
+    border-radius: 5em;
     background-color: #ddd;
     
 
 }
 
 .social img{
-    width: 22px;
-    height: 22px;
+    width: 2em;
+    height: 2em;
 }
 
 .social a:hover{
     background-color:rgb(71, 26, 26) ;
+}
+
+.footer-p{
+    padding: 1em;
+    background-color: slategray;
+    margin-top: 1em;
+    line-height: .8em;
 }
 
 
