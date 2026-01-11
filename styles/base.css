@@ -121,13 +121,16 @@ main{
     text-align: left;
 }
 .second{
-    height: 320px;
+    
+    height: auto;
+    
 }
 
 .part img{
-    display: flex;
-    justify-self: center;
-    height: 250px;
+    padding: 0 0 1em 0;
+    width: 80%;
+    height: auto;
+    margin-top: 1em;
 }
 
 .third{

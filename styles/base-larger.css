@@ -12,9 +12,10 @@
         display: none;
     }
     .navigation{
-        background-color: slategray;
+        
         display: block;
         border-bottom: solid 1px #ddd;
+        
     }
 
     .navigation ul{
@@ -44,15 +45,7 @@
         height: auto;
     }
 
-    .second img{
-        display: flex;
-        justify-content: center;
-        max-width: 80%;
-        margin: 2em;
-        height: auto;
-
-        
-    }
+   
     
 
     .third{
