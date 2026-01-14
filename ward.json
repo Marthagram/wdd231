@@ -1,0 +1,18 @@
+ 
+ 
+        
+            
+{"familyname":"Otasowie",
+"dateFamilyMovedToWard":"16th december, 2021",
+"numberOfFamilyMembers":4,
+"visitedByBishopric?":"true",
+"individualInfo":[
+                    {"name":"Martha", "gender":"female", "birthdate":"16th August, 1997"},
+                    {"name":"Justice", "gender":"male", "birthdate":"8th August, 1990"},
+                    {"name":"Gabriella", "gender":"female", "birthdate":"13th february, 2018"},
+                    {"name":"Jordan", "gender":"male", "birthdate":"19th july, 2022"}
+                ]
+
+}
+
+

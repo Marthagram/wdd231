@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+header, main, footer{
+    text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+
+h1, h2, footer{
+    color: blue;
+    font-family: Amaranth;
+}
+section{
+    background-color: rgb(178, 170, 201);
+    border: 10px solid #dfd2d2;
+}
+
+section img{
+    max-width: 250px;
+    height: 300px;
+    width: 90%;    
+
+}
+
