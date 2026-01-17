@@ -8,18 +8,17 @@ header, main, footer{
     min-width: 320px;
     max-width: 599px;
     text-align: center;
+    margin: 0 auto;
     padding: 15px;
 }
 /* header */
 header{
     display: grid;
-    grid-template-columns: 30px auto 24px 44px;
+    grid-template-columns: 30px auto 25px 44px;
     grid-template-rows: 1fr 1fr;
     align-items: center;
     padding-left: 10px;
-    color: green;
-    margin-bottom:0 ;
-    
+    color: green; 
 }
 
 
@@ -28,10 +27,7 @@ header img{
     width: 100%;
     height: auto;
 }
-header img:first-child{
-    background-color:green;
-    
-}
+
 .hamburger{
     background: none;
     border: none;
@@ -58,6 +54,7 @@ header img:first-child{
     font-size: 1.3rem;
     text-align: left;
     margin-left: 25px;
+    border-bottom: 1px solid #333;
  }
 
 
@@ -106,28 +103,40 @@ header img:first-child{
 
 /* making a list and grid layout for the sections */
 
-
-
+.grid{
+display: grid;
+grid-gap: 0.5rem;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
 section{
 background-color: #ddd;
-max-width: 30rem;
 width: 100%;
 height: 100%;
 font-size: .9rem;
-padding: 5px;
+padding: 15px;
 box-shadow: 0 0 1rem #555;
 
 }
+
 .grid section img{
     width: 150px;
     height:75px;
     margin: 0 auto;
  }
 
+ .menu{
+    background-color: green;
+    
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: .7em;
+ }
+
 .menu button {
-  padding: 0.5rem 1rem;
-  font-weight: 700;
+   
+    padding: 0.5rem 1rem;
+    font-weight: 700;
 }
 
 .grid section {
@@ -165,13 +174,10 @@ footer{
     display:grid;
     row-gap: 25px;
     text-align: left;
+    line-height: 1.7em;
 
 }
-.first a{
-    background-color: white;
-    color: green;
-    font-weight: 900;
-}
+
 
 .social{
     display: flex;
@@ -198,5 +204,14 @@ footer{
 }
 
 .social a:hover{
-    background-color:rgb(71, 26, 26) ;
+    background-color:yellow;
+}
+
+.first a{
+    background-color: white;
+    color: green;
+    font-weight: 900;
+}
+footer .first a:hover{
+   color: black;
 }
