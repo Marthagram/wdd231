@@ -4,27 +4,66 @@
     
     "companies":[
         {
-            "companyname":"Otas Integrated Farm Enterprice",
-            "company addresses":"Behind Nepa Office, Odogwu Avenue, Madallah",
-            "company phone number":"07052904746",
-            "company website URL":"https://github.io/marthagram/otasintegratedfarm",
-            "businessimage":"images/***",
-            "membershiplevel":"gold(3)"
+            "name":"Otas Integrated Farm Enterprise",
+            "address":"Behind Nepa Office, Odogwu Avenue, Madallah",
+            "phone":"07052904746",
+            "website":"martha/otasintegratedfarm.com",
+            "image":"otas-farm.webp",
+            "membershipLevel": "3 (Gold)"
         },
-
-         {
-            "companyname":"Otas Integrated Farm Enterprice",
-            "company addresses":"Behind Nepa Office, Odogwu Avenue, Madallah",
-            "company phone number":"07052904746",
-            "company website URL":"https://github.io/marthagram/otasintegratedfarm",
-            "businessimage":"images/***",
-            "membershiplevel":"gold(3)"
+        {
+            "name": "Niger Agro Ltd",
+            "address": "123 Farming Road, Minna",
+            "phone": "+234 123 4567",
+            "website": "https://nigeragro.ng",
+            "image": "niger-agro.webp",
+            "membershipLevel": "3 (Gold)"
+        },
+        {
+            "name": "Minna Tech Hub",
+            "address": "456 Innovation Street, Minna",
+            "phone": "+234 234 5678",
+            "website": "https://minnatec.hub",
+            "image": "minna-tech-hub.webp",
+            "membershipLevel": "2 (Silver)"
+        },
+        {
+            "name": "Niger River Ventures",
+            "address": "789 Rivers Edge, Bida",
+            "phone": "+234 345 6789",
+            "website": "https://nigerriventures.ng",
+            "image": "niger-river-ventures.webp",
+            "membershipLevel": "1 (Member)"
+        },
+        {
+            "name": "Suleja Mart",
+            "address": "321 Commerce Blvd, Suleja",
+            "phone": "+234 456 7890",
+            "website": "https://sulejamart.ng",
+            "image": "suleija-mart.webp",
+            "membershipLevel": "3 (Gold)"
+        },
+        {
+            "name": "Niger Delta Logistics",
+            "address": "987 Transport Road, Minna",
+            "phone": "+234 678 9012",
+            "website": "https://nigerdeltalog.ng",
+            "image": "niger-delta-logistics.webp",
+            "membershipLevel": "1 (Member)"
+        },
+        {
+            "name": "Bosso Food Court",
+            "address": "213 Food Street, Bosso",
+            "phone": "+234 789 0123",
+            "website": "https://bossofood.ng",
+            "image": "bosso.webp",
+            "membershipLevel": "3 (Gold)"
         }
 
 
+            
+
     ]
-
-
-    
+            
 
 }
