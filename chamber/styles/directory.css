@@ -104,26 +104,6 @@ header img:first-child{
 
 
 
-/* main */
-
-h3 {
-	font-size: 1.2rem;
-}
-
-h1, h2{
-    font-family: Amaranth;
-}
-h2{
-    background-color: yellow;
-}
-p{
-    font-family: roboto;  
-   
-}
-
-
-
-
 /* making a list and grid layout for the sections */
 
 
@@ -139,80 +119,39 @@ padding: 5px;
 box-shadow: 0 0 1rem #555;
 
 }
- section>img{
+.grid section img{
     width: 150px;
     height:75px;
     margin: 0 auto;
  }
 
-.menu {
-	margin: 1rem auto;
-	padding: 0.5rem;
-	background-color: green;
-	text-align: center;
+.menu button {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
 
-	button {
-		padding: 0.5rem 1rem;
-		font-weight: 700;
-	}
+.grid section {
+  text-align: center;
 }
 
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	align-items: center;
-
-	section {
-		text-align: center;
-		& > * {
-			margin: 0.1rem;
-		}
-	}
-
-	img {
-    
-		border: 1px solid #fff;
-		box-shadow: 0 0 1rem #555;
-	}
+.list section {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto 1fr;
+  margin: 0;
+  text-align: left;
+  padding: 0.25rem;
+  font-size: 1rem;
 }
 
-
-
-.list {
-	display: flex;
-	flex-direction: column;
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-	section {
-		display: grid;
-		grid-template-columns: 1fr 1fr auto 1fr ;
-		margin: 0;
-        text-align: left;
-		padding: 0.25rem;
-        font-size: 1rem;
-
-		& > * {
-			margin: 0 1rem;
-		}
-
-		img {
-			display: none;
-		}
-
-		h2 {
-			font-size: 1rem;
-		}
-
-		&:nth-child(even) {
-			background-color: #bbb;
-		}
-	}
+.list section img {
+  display: none;
 }
+
+.list section:nth-child(even) {
+  background-color: #bbb;
+}
+
 
 
 
