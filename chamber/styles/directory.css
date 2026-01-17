@@ -214,10 +214,10 @@ footer{
 }
 
 .first a{
-    background-color: white;
-    color: green;
+    
+    color: yellow;
     font-weight: 900;
 }
 footer .first a:hover{
-   color: black;
+   color: white;
 }
