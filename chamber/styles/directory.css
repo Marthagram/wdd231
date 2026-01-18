@@ -77,6 +77,8 @@ header img{
     margin-top: 0;
     grid-row: 2/3;
     grid-column: 1/4;
+    font-weight: 700;
+    
 }
 
 .navigation ul{
@@ -118,6 +120,7 @@ width: 100%;
 height: 100%;
 font-size: .9rem;
 padding: 15px;
+word-break: break-word;
 
 
 }
@@ -153,7 +156,7 @@ padding: 15px;
   gap: 1em;
   margin: 0;
   text-align: left;
-  padding: 0.25rem;
+  padding: 1rem;
   font-size: .8rem;
 }
 
