@@ -9,7 +9,8 @@
             "phone":"07052904746",
             "website":"martha/otasintegratedfarm.com",
             "image":"otas-farm.webp",
-            "membershipLevel": "3 (Gold)"
+            "membershipLevel": "3 (Gold)",
+            "tagLine":"Agricuture is continous"
         },
         {
             "name": "Niger Agro Ltd",
@@ -17,7 +18,8 @@
             "phone": "+234 123 4567",
             "website": "https://nigeragro.ng",
             "image": "niger-agro.webp",
-            "membershipLevel": "3 (Gold)"
+            "membershipLevel": "3 (Gold)",
+            "tagLine":"Number One Necessity "
         },
         {
             "name": "Minna Tech Hub",
@@ -25,7 +27,8 @@
             "phone": "+234 234 5678",
             "website": "https://minnatec.hub",
             "image": "minna-tech-hub.webp",
-            "membershipLevel": "2 (Silver)"
+            "membershipLevel": "2 (Silver)",
+            "tagLine":"Tech is tomorrow"
         },
         {
             "name": "Niger River Ventures",
@@ -33,7 +36,8 @@
             "phone": "+234 345 6789",
             "website": "https://nigerriventures.ng",
             "image": "niger-river-ventures.webp",
-            "membershipLevel": "1 (Member)"
+            "membershipLevel": "1 (Member)",
+            "tagLine":"The Value of Life"
         },
         {
             "name": "Suleja Mart",
@@ -41,7 +45,8 @@
             "phone": "+234 456 7890",
             "website": "https://sulejamart.ng",
             "image": "suleija-mart.webp",
-            "membershipLevel": "3 (Gold)"
+            "membershipLevel": "3 (Gold)",
+            "tagLine":"Shopping with Confidence"
         },
         {
             "name": "Niger Delta Logistics",
@@ -49,7 +54,8 @@
             "phone": "+234 678 9012",
             "website": "https://nigerdeltalog.ng",
             "image": "niger-delta-logistics.webp",
-            "membershipLevel": "1 (Member)"
+            "membershipLevel": "1 (Member)",
+            "tagLine":"The Choice You Can Trust"
         },
         {
             "name": "Bosso Food Court",
@@ -57,11 +63,9 @@
             "phone": "+234 789 0123",
             "website": "https://bossofood.ng",
             "image": "bosso.webp",
-            "membershipLevel": "3 (Gold)"
+            "membershipLevel": "3 (Gold)",
+            "tagLine":"Food is Always Available"
         }
-
-
-            
 
     ]
             
