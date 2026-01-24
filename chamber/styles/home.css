@@ -114,7 +114,8 @@ header img{
 .index-main p{
     padding: .3em;
     font-family: Roboto;
-    text-align: center;
+    text-align: left;
+    padding: .9em;
 }
 
 .first-div, .index-main h2{
@@ -142,6 +143,7 @@ header img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr ;
+    padding: .9rem;
     font-size: .9rem;
                 
     
@@ -154,7 +156,7 @@ header img{
     border-bottom: 1px solid #333;
     margin-left: .9em;
     margin-right: .9em;
-    background-color: green;
+    
 }
 .photo{
     grid-column: 1/2;
