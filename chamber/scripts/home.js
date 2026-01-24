@@ -5,6 +5,8 @@ async function getMembersData() {
   
     const response = await fetch(filePath);
     const data = await response.json();
+
+    
     displayMembers(data.companies);
  
 }
@@ -12,11 +14,12 @@ async function getMembersData() {
 getMembersData();
 
 function displayMembers(companies) {
-  const container = document.getElementById('members-container');
+  const container = document.getElementById('index-container');
   
   companies.forEach(company => {
-
+  if( company.membershipLevel === "3 (Gold)"|| company.membershipLevel=== "2 (Silver)"){
     const card = document.createElement("section");
+    card.className="index-section"
     const h3=document.createElement('h3');
     const p1=document.createElement('p');
     const p2=document.createElement('p');
@@ -27,8 +30,7 @@ function displayMembers(companies) {
     image.setAttribute('src', `images/${company.image}`);
     image.setAttribute('alt', `images/${company.name}`);
     image.setAttribute('loading', 'lazy');
-    image.setAttribute('width', '200');
-    image.setAttribute('height', '200');
+   
 
     h3.textContent=`${company.name}`;
     p1.textContent=`${company.tagLine}`;
@@ -53,13 +55,10 @@ function displayMembers(companies) {
 
     card.appendChild(photo)
     card.appendChild(head)
-    card.appendChild(head)
     card.appendChild(detail)
-    card.appendChild(detail)
-    card.appendChild(detail)
- 
 
     container.appendChild(card)
+  }
 
   });
 }

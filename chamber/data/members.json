@@ -18,7 +18,7 @@
             "phone": "+234 123 4567",
             "website": "https://nigeragro.ng",
             "image": "niger-agro.webp",
-            "membershipLevel": "3 (Gold)",
+            "membershipLevel": "1 (Member)",
             "tagLine":"Number One Necessity "
         },
         {
@@ -63,7 +63,7 @@
             "phone": "+234 789 0123",
             "website": "https://bossofood.ng",
             "image": "bosso.webp",
-            "membershipLevel": "3 (Gold)",
+            "membershipLevel": "1 (Member)",
             "tagLine":"Food is Always Available"
         }
 

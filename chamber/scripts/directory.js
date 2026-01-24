@@ -15,11 +15,12 @@ async function getMembersData() {
 getMembersData();
 
 function displayMembers(companies) {
-  const container = document.getElementById('members-container');
+  const container = document.getElementById('directory-container');
   
   companies.forEach(company => {
 
     const card = document.createElement("section");
+    card.className="directory-section"
     const h2=document.createElement('h2');
     const p1=document.createElement('p');
     const p2=document.createElement('p');
@@ -30,9 +31,7 @@ function displayMembers(companies) {
     image.setAttribute('src', `images/${company.image}`);
     image.setAttribute('alt', `image of ${company.name}`);
     image.setAttribute('loading', 'lazy');
-    image.setAttribute('width', '200');
-    image.setAttribute('height', '200');
-
+   
     h2.textContent=`${company.name}`;
     p1.textContent=`${company.address}`;
     p2.textContent=`${company.phone}`;

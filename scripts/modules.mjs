@@ -1,6 +1,7 @@
 import byuiCourse from './course.mjs';
 import { setSectionSelection } from './sections.mjs';
 import { setTitle, renderSections } from "./output.mjs";
+
 document.querySelector("#enrollStudent").addEventListener("click", function () {
   const sectionNum = document.querySelector("#sectionNumber").value;
   byuiCourse.changeEnrollment(sectionNum);

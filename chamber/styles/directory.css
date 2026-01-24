@@ -95,12 +95,12 @@ header img{
     text-decoration: none;
 }
 
-.navigation a:hover, button:hover{
+.navigation a:hover,.hamburger:hover{
     background-color: yellow;
 }
 
 .navigation .current{
-    background-color:#ddd ;
+    border: 1px solid #333;
 }
 
 
@@ -122,13 +122,11 @@ height: 100%;
 font-size: .9rem;
 padding: 15px;
 word-break: break-word;
-
-
 }
 
 .grid section img{
     width: 150px;
-    height:75px;
+    height:auto;
     margin: 0 auto;
  }
 
@@ -144,6 +142,10 @@ word-break: break-word;
     color: black;
     padding: 0.5rem 1rem;
     font-weight: 700;
+}
+
+.menu button:hover{
+    background-color: yellow;
 }
 
 .grid section {
@@ -208,17 +210,13 @@ footer{
 
 }
 
-.social img{
-    width: 2em;
-    height: 2em;
-}
+
 
 .social a:hover{
     background-color:yellow;
 }
 
 .first a{
-    
     color: yellow;
     font-weight: 900;
 }

@@ -1,34 +1,26 @@
+
+
+const forecast = document.querySelector('#forecast');
 const currentWeather = document.querySelector('#current-weather');
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
+export function displayForecast(data) {
+  
+  for(let i = 0; i < 24; i += 8){ 
+    
+    const date = new Date(data.list[i].dt_txt);
+    const dayName = days[date.getDay()];
 
-// Create Required Variables For The URL
-const myKey ="d99d26ebf217dba0e5621d9674e8163b";
-const myLat ="9.10";
-const myLong="7.21";
-
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
-
-// Try to Grab the Current weather Data
-async function apiFetch() {
-  try {
-    const response = await fetch(url);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data); // testing only
-      displayResults(data); // uncomment when ready
-    } else {
-        throw Error(await response.text());
-    }
-  } catch (error) {
-      console.log(error);
+    forecast.innerHTML += `
+        <p>${dayName}:${data.list[0].main.temp}&deg;F
+    `;
   }
 }
 
-// Display my json data to my webpage
-function displayResults(data){
-    console.log('hello')
 
-    // populate the currentWeather
+
+export function displayResults(data) {
+  // populate the currentWeather
     const description=document.createElement('p');
     const temp=document.createElement('p');
     const high=document.createElement('p');
@@ -57,8 +49,7 @@ function displayResults(data){
     image.setAttribute('SRC', iconsrc);
     image.setAttribute('alt', data.weather[0].description );
     image.setAttribute('loading', 'lazy');
-    image.setAttribute('width', '200');
-    image.setAttribute('height', '200');
+   
 
 
     iconImageBox.appendChild(image);
@@ -77,6 +68,5 @@ function displayResults(data){
 
 
 
-// Start the process
-apiFetch();
+
 
