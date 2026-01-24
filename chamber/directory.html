@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>        
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Directory Web Page - Chamber of Commerce</title>
@@ -13,8 +13,8 @@
         <meta property="og:url" content="https://github.io/marthagram/wdd231/chamber">
 
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/home-large.css">
         <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/home-large.css">
 
     
         <script src="scripts/directory.js" defer></script>
@@ -47,22 +47,22 @@
             </nav>
             <img src="images/circle-half.svg" alt="picture of a half-shaded pie" width="16" height="16" >
 
-            <button id="ham-btn" class="hamburger"></button>
+            <button id="ham-btn" class="hamburger" aria-label="Name"></button>
         </header>
 
             
 
-            <main>
+        <main class="directory-main">
 
-                <div class="menu">
+            <div class="menu">
 
-                    <button id="grid">Grid</button>
+                <button id="grid">Grid</button>
 
-                    <button id="list">List</button>
+                <button id="list">List</button>
 
-                </div>
-                <div id="directory-container" class="grid"></div>
-            </main>
+            </div>
+            <div id="members-container" class="grid"></div>
+        </main>
 
             <footer>
                 <div class="first">

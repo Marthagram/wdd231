@@ -39,7 +39,7 @@
         
     }
 
-    /* index main */
+  
     .first-div{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -48,7 +48,7 @@
 
     }
 
-    .index-section{
+    .index-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: .8rem;
@@ -63,5 +63,8 @@
     .third{
        margin-left: 2em; 
     }
+
+  
+
    
 }

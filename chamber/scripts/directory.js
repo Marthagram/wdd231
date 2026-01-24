@@ -15,7 +15,7 @@ async function getMembersData() {
 getMembersData();
 
 function displayMembers(companies) {
-  const container = document.getElementById('directory-container');
+  const container = document.getElementById('members-container');
   
   companies.forEach(company => {
 

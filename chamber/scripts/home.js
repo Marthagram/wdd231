@@ -14,7 +14,7 @@ async function getMembersData() {
 getMembersData();
 
 function displayMembers(companies) {
-  const container = document.getElementById('index-container');
+  const container = document.getElementById('member-container');
   
   companies.forEach(company => {
   if( company.membershipLevel === "3 (Gold)"|| company.membershipLevel=== "2 (Silver)"){
