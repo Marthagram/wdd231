@@ -47,12 +47,23 @@
       
 
     }
-
-    .index-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: .8rem;
+    .bigbox{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+    .iconbox{
+        grid-column: 1/2;
+        align-self: center;
     }
+    .infobox{
+        grid-column: 2/3;
+    }
+
+        .index-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: .8rem;
+        }
 
     footer{
        display:grid;
