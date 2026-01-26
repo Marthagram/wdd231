@@ -1,3 +1,4 @@
+import{displayMembers} from"./home.js";
 import { displayResults, displayForecast } from "./display-weather.mjs";
 const myKey = "d99d26ebf217dba0e5621d9674e8163b";
 const myLat = "9.10";
@@ -36,5 +37,19 @@ async function fetchForecast() {
   }
 }
 
+// fetching data from json and using it to populate the html
+const filePath = 'data/members.json';
+
+async function getMembersData() {
+  
+    const response = await fetch(filePath);
+    const data = await response.json();
+
+    
+    displayMembers(data.companies);
+ 
+}
+
+getMembersData();
 fetchForecast();
 fetchCurrentWeather();

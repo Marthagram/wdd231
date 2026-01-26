@@ -41,6 +41,10 @@ export function displayResults(data) {
     // creating nested divs to accomodate the p and img element for layout purpose
     const iconImageBox=document.createElement('div');
     const infoBox=document.createElement('div');
+    const bigBox =document.createElement('div')
+    bigBox.className="bigbox"
+    infoBox.className="infobox"
+    iconImageBox.className="iconbox"
     const image=document.createElement('img');
 
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
@@ -51,6 +55,7 @@ export function displayResults(data) {
     image.setAttribute('loading', 'lazy');
    
 
+   
 
     iconImageBox.appendChild(image);
     infoBox.appendChild(temp);
@@ -61,9 +66,11 @@ export function displayResults(data) {
     infoBox.appendChild(sunrise);
 
 
-    currentWeather.appendChild(infoBox);
-    currentWeather.appendChild(iconImageBox);
+    bigBox.appendChild(iconImageBox)
+    bigBox.appendChild(infoBox)
 
+    currentWeather.appendChild(bigBox);
+    
 }
 
 

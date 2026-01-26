@@ -36,7 +36,7 @@
             "phone": "+234 345 6789",
             "website": "https://nigerriventures.ng",
             "image": "niger-river-ventures.webp",
-            "membershipLevel": "1 (Member)",
+            "membershipLevel": "3 (Gold)",
             "tagLine":"The Value of Life"
         },
         {
@@ -63,7 +63,7 @@
             "phone": "+234 789 0123",
             "website": "https://bossofood.ng",
             "image": "bosso.webp",
-            "membershipLevel": "1 (Member)",
+            "membershipLevel": "2 (Silver)",
             "tagLine":"Food is Always Available"
         }
 

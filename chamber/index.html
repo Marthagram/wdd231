@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="styles/home-large.css">
 
 
-        <script src="scripts/home.js" defer></script>
+        
         <script src="scripts/date.js" defer></script>
         <script src="scripts/navigation.js" defer></script> 
         <script type="module" src="scripts/weather.mjs"></script> 
@@ -47,7 +47,7 @@
             </nav>
             <img src="images/circle-half.svg" alt="picture of a half-shaded pie" width="16" height="16" >
 
-            <button id="ham-btn" class="hamburger"></button>
+            <button id="ham-btn" class="hamburger" aria-label="name"></button>
         </header>
 
         <main class="index-main">
@@ -64,20 +64,27 @@
 
             <!-- divs for the upper division -->
             <div class="first-div">
-                <div class="event">
+                <div class="joint">
                     <h3>Events</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatum odio blanditiis incidunt doloremque. Cupiditate, libero voluptatem impedit fugit, praesentium, ex fuga ab accusamus iusto expedita consequatur corporis deleniti sunt.
-
+                       <ul>
+                        <li>
+                            <strong>Economic Outlook:</strong> 
+                        Vice President Kashim Shettima will present Nigeria's 2026 economic outlook at the 56th World Economic Forum(WEF) in Davos, Switzerland, highlighting efforts to re-engineer the economy and attract investments </li>
+                        <li>
+                            <strong>Business News:</strong> The Nigerian stock market has gained 2.36% as equities add 2.48 trillion
+in the week ended January 16, 2026.                        </li>
+                        
+                       </ul>
                     </p>
                 </div>
 
-                <div id="current-weather" class="joint">
+                <div id="current-weather" class="joint weather ">
                     <h3>Current Weather</h3>
                    
                 </div>
 
-                <div id="forecast"  class="joint">
+                <div id="forecast"  class="joint weather">
                   <h3>Weather Forecast</h3>
                   
                 </div>
