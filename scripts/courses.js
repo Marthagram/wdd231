@@ -103,7 +103,7 @@ function displayCourses(courses){
       
     });
     
-};
+};         
 
 
 
@@ -136,5 +136,9 @@ cseCourses.addEventListener("click", () => {
     displayCourses(cse);
     displayTotalCredits(cse);
 });
+
+function diplayModal(){
+              
+}
 
  

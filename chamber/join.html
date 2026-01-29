@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page - Chamber of Commerce</title>
-        <meta name="description" content="Martha Itohan Otasowie| WDD231 - Frontend Web Development 1 | Chamber of Commerce, Home page">
+        <title>Join Page - Chamber of Commerce</title>
+        <meta name="description" content="Martha Itohan Otasowie| WDD231 - Frontend Web Development 1 | Chamber of Commerce, Join page">
 
         <meta  name="author" content="Martha Itohan Otasowie">
         <meta property="og:title" content="Directory-WDD231 - Frontend Web Development 1">
-        <meta property="og:description" content="The first place and first impression of the site where events, businesses, current weather forcast and call to action are displayed">
+        <meta property="og:description" content="Register and join the Niger State Chamber of Commerce">
         <meta property="og:image" content="https://marthagram.github.io/wdd231/chamber/images/niger-agro-webp" >
         <meta property="og:url" content="https://github.io/marthagram/wdd231/chamber">
 
@@ -20,7 +20,9 @@
         
         <script src="scripts/date.js" defer></script>
         <script src="scripts/navigation.js" defer></script> 
-        <script type="module" src="scripts/weather.mjs"></script> 
+        <script src="scripts/join.js" defer></script> 
+       
+       
        
 
        
@@ -50,48 +52,49 @@
             <button id="ham-btn" class="hamburger" aria-label="name"></button>
         </header>
 
-        <main class="index-main">
-            <aside>
-                 <picture>
-                        
-                        <source srcset="images/large-hero-image.webp" media="(min-width: 600px)">
-                        <img  class="heroimage" src="images/hero-chamber-home-image.webp" alt="picture of commercial activity" >
-                    </picture>
-            
-                <a href="join.html" class="join-button">Join Us</a>
-            </aside>
-            <h2>Home</h2>
-
-            <!-- divs for the upper division -->
-            <div class="first-div">
-                <div class="joint">
-                    <h3>Events</h3>
-                    
-                       <ul>
-                        <li>
-                            <strong>Economic Outlook:</strong> 
-                        Vice President Kashim Shettima will present Nigeria's 2026 economic outlook at the 56th World Economic Forum(WEF) in Davos, Switzerland, highlighting efforts to re-engineer the economy and attract investments </li>
-                        <li>
-                            <strong>Business News:</strong> The Nigerian stock market has gained 2.36% as equities add 2.48 trillion
-in the week ended January 16, 2026.                        </li>
-                        
-                       </ul>
-                    
-                </div>
-
-                <div id="current-weather" class="joint weather ">
-                    <h3>Current Weather</h3>
-                   
-                </div>
-
-                <div id="forecast"  class="joint weather">
-                  <h3>Weather Forecast</h3>
-                  
-                </div>
-            </div>
-            <!-- divs for business cards -->
-            <div id="member-container" class="index-container"></div>
+        <main class="join-main">
+           
         
+            <form method="GET" action="thanks.html" class="designOne">
+                <h1>Membership Application Form</h1>
+                <label>First Name <input type="text" required name="first" title="Applicant's first name" autocomplete="given-name" >
+                </label>
+
+                <label>Last Name <input type="text"  required name="last"   title="Applicant's last name" autocomplete="family-name" >
+                </label>
+
+                <label>Organizational Title (position in work place) <input type="text"  required name="title"   title="organizational title" autocomplete="organization-title" pattern="^[a-zA-Z\s-]{7,}$"></label>
+
+                <label>Email Address<input  type="email" required name="email" title="Applicant's email address" autocomplete="email" placeholder="someone@gmail.com"></label>
+
+                <label>Mobile Phone Number<input type="tel"  required name="telephone" title="Applicant's mobile phone number" autocomplete="tel"></label>
+
+                <label>Business/Organization's name<input type="text" required name="business" title="Applicant's business name" autocomplete="organization"></label>
+                <label>Membership level
+
+                    <select name="membership level">
+                        <option value="">Please select  &#9662;</option>
+                        <option value="np">NP Membership is for non-profit organizations and there is no fee</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Business/Organization's Description
+                    <textarea name="business-description"  title="business description"></textarea>
+                    
+                <label><input type="hidden" name="timestamp" id="timestamp" value=""></label>
+             
+
+                <input type="submit" value="Submit Application">
+
+            </form>
+
+            <div id="membership-container">
+                <h2>Membership Levels</h2>
+                
+            </div>  
             
         </main>
             

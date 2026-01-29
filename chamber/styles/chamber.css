@@ -355,3 +355,101 @@ footer{
 footer .first a:hover{
    color: white;
 }
+
+/* join */
+.join-main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+.designOne >label{
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="hidden"],
+select,
+textarea
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    /* appearance: none; this over writes the default browser styling */
+    appearance: none;
+}
+
+input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+
+}
+
+input:required{
+    border-bottom:solid 5px red;
+}
+
+input:required:valid{
+    border-bottom:solid 5px green;
+
+}
+
+.closeButton:hover, input[type="submit"]:hover, #membership-container a:hover{
+    color: black;
+    background-image: white;
+}
+
+
+#membership-container section{
+    background-color: #ddd;
+    padding: 2rem;
+    margin: 2rem;
+    color: #333;
+    text-align: center;
+}
+#membership-container dialog{
+
+    padding: 2rem;
+    margin: 2rem  auto;
+
+}
+#membership-container a{
+    text-decoration: none;
+    color:#9c2c13;     
+    background-color: white;              
+}
+dialog .closeButton{
+
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+
+}
+::backdrop{
+    background-color:rgba(223,128,0,0.2) ;
+}
+
+
