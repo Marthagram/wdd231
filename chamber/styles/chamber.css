@@ -6,7 +6,6 @@
 
 header, main, footer{
     min-width: 320px;
-    max-width: 599px;
     text-align: center;
     margin: 0 auto;
     padding: 15px;
@@ -357,17 +356,25 @@ footer .first a:hover{
 }
 
 /* join */
-.join-main {
-    padding: 0 2%;
-    min-height: 20rem;
+
+.join-main h2{
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem;
+
 }
 .designOne >label{
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: green;
     font-size: .9rem;
     text-align: left;
     margin-bottom: 2rem;
+    font-weight: 600;
+    
+    
     
 }
 input[type="text"],
@@ -403,17 +410,29 @@ input[type="submit"]{
 }
 
 input:required{
-    border-bottom:solid 5px red;
+    border-left:solid 5px red;
 }
 
 input:required:valid{
-    border-bottom:solid 5px green;
+    border-left:solid 5px green;
 
 }
 
 .closeButton:hover, input[type="submit"]:hover, #membership-container a:hover{
     color: black;
     background-image: white;
+}
+
+@keyframes fadein{
+    0%{
+        background-color: rgb(159, 187, 159);
+    }
+    100%{
+        background-color: #ddd;
+    }
+}
+@keyframes slidein{
+    
 }
 
 
@@ -423,6 +442,11 @@ input:required:valid{
     margin: 2rem;
     color: #333;
     text-align: center;
+    animation: fadein 2s ease-in 1s ;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+         
+    
 }
 #membership-container dialog{
 
@@ -452,4 +476,25 @@ dialog .closeButton{
     background-color:rgba(223,128,0,0.2) ;
 }
 
+/* ***thankyou page */
+#result{
+    line-height: 1.6rem;
+    border: #333;
+    background-color: #ddd;
+    padding: 2rem;
+    border-radius: 1rem;
+    
+}
+#result  span{
+    text-align: center;
+    color: #9c2c13;
+    background-color: white;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Amaranth;
+}
+#result  p{
+    font-size: 1rem;
+    color: green;
+    text-align: left;
+}
 

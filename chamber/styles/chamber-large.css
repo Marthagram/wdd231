@@ -2,6 +2,7 @@
     header, footer{
         max-width: 1200px;
         margin: 0 auto;
+        padding: 10px;
     } 
     
    header{
@@ -59,11 +60,11 @@
         grid-column: 2/3;
     }
 
-        .index-container{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: .8rem;
-        }
+    .index-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .8rem;
+    }
 
     footer{
        display:grid;
@@ -75,7 +76,19 @@
        margin-left: 2em; 
     }
 
-  
+    .join-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .designOne{
+        grid-template-columns: 1/2;
+    }
+
+    #membership-container{
+        grid-template-columns: 2/3;
+    }
 
    
 }
