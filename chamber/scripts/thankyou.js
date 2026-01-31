@@ -8,7 +8,9 @@ console.log(myInfo);
 const result = document.querySelector("#result");
 
 result.innerHTML=`
-<span>Thank You ${myInfo.get("first")} ${myInfo.get("last")} for Showing Interest to Join Us
+<span>Thank You ${myInfo.get("first")} ${myInfo.get("last")} for Showing Interest to Join Us. 
+You will be contacted through your email soon</span>
+
 <p>Your Application details includes:</p>
 <p>Name: ${myInfo.get("first")} ${myInfo.get("last")} </p>
 <p>Business Organization: ${myInfo.get("business")}</p>
@@ -16,5 +18,6 @@ result.innerHTML=`
 <p>Email: ${myInfo.get("email")}</p>
 <p>Mobile Number: ${myInfo.get("telephone")}</p>
 <p>Date of Application:${myInfo.get("timestamp")}</p>
+
 
 `;
