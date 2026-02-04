@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, nav, footer{
+    padding: 2rem;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+header{
+    display: grid;
+    grid-template-columns: 35px auto ;
+    gap: 2rem;
+    font-size: .9rem;
+    padding-bottom: 0;  
+    border-bottom:1px solid #333;
+    font-family: Amaranth, Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+header h1{
+    border-left: 1px solid #333;
+    color: blue;
+    padding-left: 1rem;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    
+}
+
+.site-main{
+    font-family: Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul{
+     
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+nav a{
+    
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: red;
+   
+}
+nav a:hover{
+    color: #333;
+    border-bottom:1px solid red;
+    
+}
+
+div{
+    background-color: #ddd;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    line-height: 2rem;
+    border: 1px solid yellow;
+    border-radius: 1rem;
+}
+
+
+footer{
+    display: grid;
+    justify-items: center;
+    background-color: #333;
+    color: white;
+    font-family: Amaranth, Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+footer a{
+    text-decoration: none;
+    color: yellow;
+
+}
+footer a:hover{
+    color: white;
+    border-bottom:1px solid red;
+    border-radius: .5rem;
+    
+}

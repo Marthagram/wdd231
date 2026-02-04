@@ -487,7 +487,7 @@ dialog .closeButton{
     height: auto;
     
 }
-#result  span{
+#result span{
     text-align: center;
     color: #9c2c13;
     background-color: white;
@@ -501,4 +501,55 @@ dialog .closeButton{
     color: green;
     text-align: left;
 }
+
+/* ***Discover** */
+
+    #place-container{
+    display: grid;
+    justify-self: center;
+
+    }
+
+
+    #place-container section{
+        border: 1px solid #ddd;
+        margin: 1rem ;
+        display: grid;
+        grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "address"
+        "button"
+        ;
+    }
+
+    #place-container section h2{
+        grid-area: name;
+    }
+    #place-container section figure{
+        grid-area: photo;
+
+    }
+     #place-container section figure img{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+
+
+    }
+
+     
+    #place-container section address{
+        grid-area: address;
+    }
+    #place-container section p{
+        grid-area: description;
+    }
+    #place-container section button{
+        grid-area: button;
+    }
+
+
 

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1025px) {
     header, footer{
         max-width: 1200px;
         margin: 0 auto;
@@ -90,5 +90,32 @@
         grid-column: 2/3;
     }
 
-   
+    /* ****Discover**** */
+    #place-container{
+        border: 1px solid #ddd;
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+      #place-container section figure{
+       
+        width: 150px;
+        height: 100px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    #place-container section figure img{
+        
+        
+        width: 100%;
+        height: 100%;
+        
+    }
+    #place-container section p, #place-container section address{
+        font-size: 1rem;
+    }
+
+
+
 }
