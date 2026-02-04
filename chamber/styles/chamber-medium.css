@@ -1,5 +1,40 @@
 @media only screen and (min-width: 641px) {
+    header, main, footer{
+        max-width: 641px;
+        margin: 0 auto;
+        padding: 10px;
+    } 
+    
+   header{
+    display: grid;
+    grid-template-columns: 30px auto auto 30px;
+   } 
+   
 
+
+    .hamburger{
+        display: none;
+    }
+    
+    .navigation{
+        
+        display: block;
+        border-bottom: solid 1px #ddd;
+        font-weight: 700;
+        
+        
+    }
+
+    .navigation ul{
+        display: flex;
+        
+    }
+    .navigation a{
+        border: none;
+        color: #333;
+        
+        
+    }
     #place-container{
         display: grid;
         justify-items: center;
@@ -33,6 +68,9 @@
         
      }
     
+    #place-container section figure img:hover{
+        transform: scaleX(-1);
+    }
     #place-container section address{
         grid-area: address;
     }

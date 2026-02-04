@@ -14,11 +14,13 @@ header, main, footer{
 header{
     display: grid;
     grid-template-columns: 30px auto 25px 44px;
-    grid-template-rows: 1fr 1fr;
     align-items: center;
+    gap: 2rem;
     padding-left: 10px;
     color: green; 
     font-family: Amaranth;
+    box-shadow: 1px 1px 4px #999;
+    
 }
 
 
@@ -26,6 +28,7 @@ header img{
     display: block;
     width: 100%;
     height: auto;
+    
 }
 
 .hamburger{
@@ -54,7 +57,7 @@ header img{
     font-size: 1.3rem;
     text-align: left;
     margin-left: 25px;
-    border-bottom: 1px solid #333;
+    
  }
 
 
@@ -258,6 +261,8 @@ word-break: break-word;
 .grid section img{
     width: 150px;
     height:auto;
+    object-fit: cover;
+    overflow: hidden;
     margin: 0 auto;
  }
 
@@ -504,12 +509,19 @@ dialog .closeButton{
 
 /* ***Discover** */
 
+
+    .discover-main span{
+        font-size: 1.4rem;
+        font-weight: 700;
+        border-bottom: yellow;
+        text-decoration: underline;
+    }
     #place-container{
     display: grid;
     justify-self: center;
 
     }
-
+      
 
     #place-container section{
         border: 1px solid #ddd;
@@ -522,34 +534,61 @@ dialog .closeButton{
         "address"
         "button"
         ;
+        background-color: #ddd;
+        border: 1px solid yellow;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 4px #999;
+        line-height: 1.7rem;
+        overflow: hidden
     }
 
     #place-container section h2{
         grid-area: name;
+        padding: 1rem;
+        box-shadow: 1px 1px 4px #999;
+        font-weight: 200;
+        
     }
     #place-container section figure{
         grid-area: photo;
-
+        
     }
      #place-container section figure img{
         width: 100%;
         height: 200px;
         overflow: hidden;
         object-fit: cover;
-
-
     }
+   
 
-     
+
     #place-container section address{
         grid-area: address;
+          font-size: 1.1rem;
     }
     #place-container section p{
         grid-area: description;
+        padding: 1rem;
+        font-size: 1.1rem;
     }
     #place-container section button{
         grid-area: button;
+        margin-top: .7rem;
+        font-size: 1.1rem;
+        padding: .8rem;
+        margin: 1rem;
+        border-radius: 3rem;
+        background-image: linear-gradient(#9c2c13, #6f200e);
+        color: white;
+       
+
     }
+
+     #place-container section button:hover{
+        color: yellow;
+     }
+
+
 
 
 

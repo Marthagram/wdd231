@@ -9,7 +9,7 @@ function displayPlaces(places){
         <section>
             <h2>${place.name}</h2>
             <figure>
-                <img src="images/${place.photoUrl}" alt="${place.description}">
+                <img src="images/${place.photoUrl}" alt="${place.description} loading="lazy">
             </figure>     
             <address>${place.address}</address>
             <p>${place.description} </p>

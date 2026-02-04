@@ -74,7 +74,7 @@ div{
 
 footer{
     display: grid;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #333;
     color: white;
     font-family: Amaranth, Verdana, Geneva, Tahoma, sans-serif;
