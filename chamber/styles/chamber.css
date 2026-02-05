@@ -571,10 +571,9 @@ dialog .closeButton{
     }
     #place-container section button{
         grid-area: button;
-        margin-top: .7rem;
         font-size: 1.1rem;
-        padding: .8rem;
-        margin: 1rem;
+        padding:7px;
+        margin: 10px;
         border-radius: 3rem;
         background-image: linear-gradient(#9c2c13, #6f200e);
         color: white;
