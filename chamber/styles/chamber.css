@@ -10,6 +10,14 @@ header, main, footer{
     margin: 0 auto;
     padding: 15px;
 }
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, header, footer {
+    font-family: Amaranth, sans-serif;
+}
 /* header */
 header{
     display: grid;
@@ -17,7 +25,6 @@ header{
     align-items: center;
     padding-left: 10px;
     color: green; 
-    font-family: Amaranth;
     box-shadow: 1px 1px 4px #999;
     
 }
@@ -74,8 +81,6 @@ header img{
 .navigation.show{
     display: block;
     text-align:left;
-    margin: 0;
-    margin-top: 0;
     grid-row: 2/3;
     grid-column: 1/4;
     font-weight: 700;
@@ -96,7 +101,8 @@ header img{
     text-decoration: none;
 }
 
-.navigation a:hover,.hamburger:hover{
+.navigation a:hover,
+.hamburger:hover{
     background-color: yellow;
 }
 
@@ -104,18 +110,29 @@ header img{
     border: 1px solid #333;
 }
 
+/* **button** */
+.btn-primary{
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    box-shadow: 1px 1px 4px #999;
+}
+
 /* index-main */
 
 
 
 .index-main {
-    font-family: Roboto;
+
     text-align: left;
     line-height: 1.8rem;
   
 }
 
-.first-div, .index-main h2{
+.first-div, 
+.index-main h2{
     margin-top: 2em;
 }
 
@@ -157,7 +174,8 @@ header img{
     padding-top: .8rem;
 
 } 
-.head h3, .head p{
+.head h3, 
+.head p{
     text-align: center;
     color: green;
     background-color: white;
@@ -176,7 +194,6 @@ header img{
 .photo img{
     max-width: 160px;
     height: auto;
-    width:100%;
     margin: 0;
     margin-top: .9em;
 }
@@ -190,18 +207,19 @@ header img{
 
 }
 
-.joint{
+/* .joint{
     background-color: #ddd;
     padding: 1rem;
     
       
-}
+} */
 
 .weather p:nth-of-type(1){
     margin-top: 1rem;
 }
 
-ul{
+.index-main ul,
+.weather ul {
     text-align: left;
     line-height: 2rem;
     padding: 1rem;
@@ -241,14 +259,12 @@ aside a:hover{
 /* DIRECTORY MAIN */
 
 .grid{
-font-family: roboto;
 display: grid;
 grid-gap: 0.5rem;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.directory-section{
-font-family: roboto;  
+.directory-section{  
 background-color: #ddd;
 width: 100%;
 height: 100%;
@@ -307,20 +323,15 @@ word-break: break-word;
 }
 
 
-
-
-
 /* footer */
 footer{
     background-color: #333;
     color: white;
     margin-top: 2em;
-    vertical-align: center;
     display:grid;
     row-gap: 25px;
     text-align: left;
     line-height: 1.7em;
-    font-family: Amaranth;
     font-size: 1em;
 
 }
@@ -400,18 +411,6 @@ textarea
     appearance: none;
 }
 
-input[type="submit"]{
-    border: none;
-    background-image: linear-gradient(#9c2c13, #6f200e);
-    color: #fff;
-    border-radius: 6px;
-    padding: .8rem;
-    width: 96%;
-    max-width: 400px;
-    margin: 2rem 2% 2rem 2%;
-    box-shadow: 1px 1px 4px #999;
-
-}
 
 input:required{
     border-left:solid 5px red;
@@ -422,7 +421,7 @@ input:required:valid{
 
 }
 
-.closeButton:hover, input[type="submit"]:hover, #membership-container a:hover{
+.btn-primary:hover, #membership-container a:hover{
     color: black;
     background-color: white;
 }
@@ -435,10 +434,6 @@ input:required:valid{
         background-color: #ddd;
     }
 }
-@keyframes slidein{
-    
-}
-
 
 #membership-container section{
     background-color: #ddd;
@@ -463,19 +458,7 @@ input:required:valid{
     color:#9c2c13;     
     background-color: white;              
 }
-dialog .closeButton{
 
-    border: none;
-    background-image: linear-gradient(#9c2c13, #6f200e);
-    color: #fff;
-    border-radius: 6px;
-    padding: .8rem;
-    width: 96%;
-    max-width: 400px;
-    margin: 2rem 2% 2rem 2%;
-    box-shadow: 1px 1px 4px #999;
-
-}
 ::backdrop{
     background-color:rgba(223,128,0,0.2) ;
 }
@@ -522,7 +505,6 @@ dialog .closeButton{
       
 
     #place-container section{
-        border: 1px solid #ddd;
         margin: 1rem ;
         display: grid;
         grid-template-areas:
@@ -562,7 +544,7 @@ dialog .closeButton{
 
     #place-container section address{
         grid-area: address;
-          font-size: 1.1rem;
+        font-size: 1.1rem;
     }
     #place-container section p{
         grid-area: description;

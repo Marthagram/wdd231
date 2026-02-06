@@ -50,7 +50,7 @@ function displayMembership(membership){
             <li>${member.listTwo}</li>
             <li>${member.listThree}</li>
           </ul>
-          <button class="closeButton">Close</button>
+          <button class="btn-primary">Close</button>
         </dialog>
       </section>
     `;

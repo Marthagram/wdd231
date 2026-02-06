@@ -13,7 +13,7 @@ function displayPlaces(places){
             </figure>     
             <address>${place.address}</address>
             <p>${place.description} </p>
-            <button>Learn More</button>
+            <button class=btn-primary>Learn More</button>
 
         </section>
         `
