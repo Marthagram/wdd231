@@ -37,6 +37,16 @@ header img{
     
 }
 
+
+ h1{
+
+    font-size: 1.3rem;
+    text-align: left;
+    margin-left: 25px;
+    
+ }
+
+/* navigation */
 .hamburger{
     background: none;
     border: none;
@@ -58,25 +68,10 @@ header img{
     font-weight: 900;
 
 }
- h1{
 
-    font-size: 1.3rem;
-    text-align: left;
-    margin-left: 25px;
-    
- }
-
-
-
-
-
-/* navigation */
 .navigation{
     display: none;
-    
-    
 }
-
 
 .navigation.show{
     display: block;
@@ -178,11 +173,7 @@ header img{
 .head p{
     text-align: center;
     color: green;
-    background-color: white;
-    
-         
-  
-    
+    background-color: white;  
 }
     
 

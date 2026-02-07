@@ -5,11 +5,10 @@
         padding: 10px;
     } 
     
-   header{
+    header{
     display: grid;
     grid-template-columns: 30px auto auto 30px;
-   } 
-   
+    }
 
 
     .hamburger{
@@ -20,9 +19,7 @@
         
         display: block;
         border-bottom: solid 1px #ddd;
-        font-weight: 700;
-        
-        
+        font-weight: 700;   
     }
 
     .navigation ul{
@@ -30,6 +27,7 @@
         
     }
     .navigation a{
+        display: block;
         border: none;
         color: #333;
         

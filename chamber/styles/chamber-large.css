@@ -5,42 +5,11 @@
         padding: 10px;
     } 
     
-   header{
-    display: grid;
-    grid-template-columns: 30px auto auto 30px;
-   } 
-   
-
     main,.navigation{
         max-width: 900px;
         
     }
 
-    .hamburger{
-        display: none;
-    }
-    
-    .navigation{
-        
-        display: block;
-        border-bottom: solid 1px #ddd;
-        font-weight: 700;
-        
-        
-    }
-
-    .navigation ul{
-        display: flex;
-        
-    }
-    .navigation a{
-        border: none;
-        color: #333;
-        
-        
-    }
-
-  
     .first-div{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
