@@ -1,0 +1,339 @@
+:root{
+    --primary-color: yellow;
+    --secondary-color: #0000ee;
+    --accent1:red;
+    --accent2:green;
+    --accent3: linear-gradient(#9c2c13, #6f200e);
+    --heading-font: "Amaranth", Verdana, Geneva, Tahoma, sans-serif;
+    --body-font: "Roboto", sans-serif, Georgia ;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, nav, footer{
+    padding: 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+}
+
+header{
+    display: grid;
+    grid-template-columns: 35px auto 44px ;
+    gap: 1rem;
+    font-size: .7rem;
+    padding: .8rem 2rem;
+    border-bottom:1px solid green;
+    
+}
+
+header h1{
+    border-left: 1px solid green;
+    color: blue;
+    padding-left: 1rem;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    
+}
+body{
+    font-family: var(--body-font);
+}
+
+h1, h2, h3, header, footer {
+    font-family: var(--heading-font);
+}
+
+/* **navigation** */
+
+
+.hamburger{
+    background: none;
+    border: none;
+    color: green;
+    cursor: pointer;
+    align-self: center;
+}
+.hamburger::before{
+    content: "\2630";
+    font-size: 1.5rem;
+    font-family: roboto;
+    font-weight: 900;
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+    grid-row: 2/3;
+    font-size: 2rem;
+    font-family: roboto;
+    font-weight: 900;
+
+}
+
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+    background-color: #fff;
+    border-bottom: 1px solid green;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--accent1);
+    padding: .8rem 2rem;
+}
+
+.navigation a:hover,
+.hamburger:hover,
+#mydialog button
+{
+    color: #333;
+    border-bottom:1px solid var(--accent1);
+}
+
+.navigation .current{
+    border-bottom: 1px solid #333;
+}
+
+.index-main, footer, .aboutus-main{
+    margin-top: 1rem;
+    background-color: #ddd;
+}
+.events, 
+.offer,  
+.about-us, 
+.comments{
+    padding: 2rem;
+    line-height: 1.8rem;
+    margin-top: 2rem;
+}
+
+.events h2, .offer h2{
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.events, .offer, 
+#skills-container .section-cards, 
+.about-us, 
+.comments{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    margin-bottom: 1.4rem;
+    padding-bottom: 2rem;
+    
+}
+
+#skills-container{
+    display: grid;
+    grid-gap: 0.5rem;
+    margin-top: 2rem;
+    min-height: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+#skills-container .section-cards{
+    display: grid;
+    grid-template-areas: 
+    "name name"
+    "image category"
+    "image duration"
+    "image difficulty"
+    "image button"
+    ;
+    box-shadow: 1px 1px 4px #999;
+    justify-items: center;
+   
+    
+    
+}
+
+.p1, .p2, .p3{
+    justify-self: left;
+    padding-left: 1rem;
+  
+}
+
+.section-cards h3{
+    grid-area: name;  
+    padding: 1rem;      
+    text-decoration: underline;
+}
+.section-cards .p1{
+    grid-area: category;
+   
+
+}
+.section-cards .p2{
+    grid-area: duration; 
+     
+}
+.section-cards .p3{
+    grid-area: difficulty ;
+}
+.section-cards img{
+    grid-area: image;
+    max-width: 80%;
+    width: 300px;
+    height: auto;
+}
+.section-cards button{
+    grid-area: button;
+    padding: 0 2rem;
+  
+}
+
+.section-cards button:hover,
+#apply-button:hover, 
+#about-us-button:hover{
+    color: var(--primary-color);    
+
+}
+
+/* ****HeroDIV**** */
+
+.first-div {
+    position: relative;
+    text-align: center;
+}
+
+.first-div h2 {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 1rem;
+    max-width: 90%;
+}
+
+.first-div img{
+    /* rotate: 0.05turn;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 1px; */
+    width: 100%;
+    height: auto;
+}
+
+/* ****Dialog in home page**** */
+
+#mydialog{
+    
+    margin: 1rem auto;
+}
+
+#mydialog div{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 44px;
+    border-bottom: 2px solid var(--accent1);
+}
+
+#mydialog h4, #mydialog button{
+    color:var(--accent2);
+}
+#mydialog button{
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#mydialog p{
+    padding: 1rem;
+    font-size: 1rem;
+
+
+}
+::backdrop{
+    background-color:rgba(223,128,0,0.2) ;
+}
+#apply-button, 
+.section-cards button, 
+#about-us-button{
+    background-image: var(--accent3) ; 
+    color: white;
+}
+
+#apply-button,
+#about-us-button{
+    font-size: 22px;
+    padding:1.1rem;
+    border-radius: 1rem;
+}
+
+.CTA{
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+}
+/* footer */
+footer{
+   
+    margin-top: 2em;
+    display:grid;
+    row-gap: 25px;
+    text-align: center;
+    line-height: 1.7em;
+    font-size: 1em;
+    padding: 0;
+
+}
+
+footer .first,
+footer .second {
+    padding: 1rem;
+}
+
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+ }
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    border: 1.5px solid rgb(71, 26, 26);
+    border-radius: 5em;
+    background-color: #ddd;
+    
+
+}
+
+footer .first{
+    background-color: var(--secondary-color);
+    padding: .9rem 0;
+    color: white;
+    width: 100%;
+}
+footer .second{
+    background-color: #ddd;
+}

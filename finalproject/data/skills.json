@@ -1,0 +1,154 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "Programming & Coding",
+      "description": "Learn how to build software, websites, and applications using programming languages like Python, JavaScript, and Java.",
+      "category": "Technology",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "3 to 12 months",
+      "difficulty_level": "Beginner to Advanced",
+      "image_url": "images/programming.webp"
+    },
+    {
+      "id": 2,
+      "name": "Graphic Design",
+      "description": "Develop visual communication skills using design tools such as Photoshop, Illustrator, and Canva.",
+      "category": "Creative",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "2 to 6 months",
+      "difficulty_level": "Beginner to Intermediate",
+      "image_url": "images/graphic-design.webp"
+    },
+    {
+      "id": 3,
+      "name": "Digital Marketing",
+      "description": "Master online marketing strategies including SEO, social media marketing, email campaigns, and paid ads.",
+      "category": "Business",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "2 to 4 months",
+      "difficulty_level": "Beginner to Intermediate",
+      "image_url": "images/digital-marketing.webp"
+    },
+    {
+      "id": 4,
+      "name": "Photography",
+      "description": "Learn camera operation, composition, lighting, and photo editing for professional-quality images.",
+      "category": "Creative",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "1 to 6 months",
+      "difficulty_level": "Beginner to Advanced",
+      "image_url": "images/photography.webp"
+    },
+    {
+      "id": 5,
+      "name": "Video Editing & Filmmaking",
+      "description": "Create compelling videos by learning shooting techniques, storytelling, and editing software.",
+      "category": "Creative",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "2 to 6 months",
+      "difficulty_level": "Beginner to Intermediate",
+      "image_url": "images/video-editing.webp"
+    },
+    {
+      "id": 6,
+      "name": "Public Speaking",
+      "description": "Improve communication, confidence, and presentation skills for professional and personal settings.",
+      "category": "Personal Development",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "1 to 3 months",
+      "difficulty_level": "Beginner to Intermediate",
+      "image_url": "images/public-speaking.webp"
+    },
+    {
+      "id": 7,
+      "name": "Foreign Languages",
+      "description": "Learn to speak, read, and write a new language through structured lessons and practice.",
+      "category": "Education",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "6 to 24 months",
+      "difficulty_level": "Beginner to Advanced",
+      "image_url": "images/language-learning.webp"
+    },
+    {
+      "id": 8,
+      "name": "Music",
+      "description": "Develop musical ability by learning instruments, music theory, or vocal training.",
+      "category": "Creative",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "3 to 12 months",
+      "difficulty_level": "Beginner to Advanced",
+      "image_url": "images/music.webp"
+    },
+    {
+      "id": 9,
+      "name": "Data Analysis",
+      "description": "Analyze and interpret data using tools like Excel, SQL, Power BI, or Tableau.",
+      "category": "Technology",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "2 to 6 months",
+      "difficulty_level": "Beginner to Intermediate",
+      "image_url": "images/data-analysis.webp"
+    },
+    {
+      "id": 10,
+      "name": "UX/UI Design",
+      "description": "Design user-friendly digital experiences through research, wireframing, and prototyping.",
+      "category": "Technology",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "3 to 6 months",
+      "difficulty_level": "Beginner to Intermediate",
+      "image_url": "images/ux-ui.webp"
+    },
+    {
+      "id": 11,
+      "name": "Creative Writing",
+      "description": "Enhance storytelling, copywriting, and content creation skills for various platforms.",
+      "category": "Creative",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "1 to 4 months",
+      "difficulty_level": "Beginner to Intermediate",
+      "image_url": "images/creative-writing.webp"
+    },
+    {
+      "id": 12,
+      "name": "Personal Fitness Training",
+      "description": "Learn exercise techniques, fitness programming, and body conditioning methods.",
+      "category": "Health & Fitness",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "2 to 6 months",
+      "difficulty_level": "Beginner to Advanced",
+      "image_url": "images/fitness.webp"
+    },
+    {
+      "id": 13,
+      "name": "Cooking & Culinary Skills",
+      "description": "Develop cooking techniques, recipe creation, and kitchen safety skills.",
+      "category": "Lifestyle",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "1 to 6 months",
+      "difficulty_level": "Beginner to Intermediate",
+      "image_url": "images/cooking.webp"
+    },
+    {
+      "id": 14,
+      "name": "Project Management",
+      "description": "Learn how to plan, execute, and manage projects using Agile, Scrum, or traditional methods.",
+      "category": "Business",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "2 to 4 months",
+      "difficulty_level": "Intermediate",
+      "image_url": "images/project-management.webp"
+    },
+    {
+      "id": 15,
+      "name": "Entrepreneurship & Business Skills",
+      "description": "Gain practical knowledge in starting and running a business, including finance, sales, and strategy.",
+      "category": "Business",
+      "learning_modes": ["online", "in-person"],
+      "estimated_duration": "3 to 6 months",
+      "difficulty_level": "Beginner to Intermediate",
+      "image_url": "images/entrepreneurship.webp"
+    }
+  ]
+}
