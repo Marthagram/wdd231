@@ -1,6 +1,7 @@
 @media only screen and (min-width: 600px){
     header, main, nav, footer{
     max-width: 1200px;
+    
    
     /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
 }
@@ -27,5 +28,45 @@
         
         
     }
+    /* **************************About US******************************* */
+
+    .aboutus-main{
+        display: grid;
+        grid-template-areas:
+        "aboutus comments";
+        gap: .8rem;
+    }
+
+    .about-us{
+        grid-area: aboutus;
+    }
+    .comments{
+        grid-area: comments;
+    }
+    /* *****************************HomePAge************************************ */
+    .second-div{
+        display: grid;
+        grid-template-areas:
+        "offer events";
+        gap: .8rem;
+    }
+
+    .offer{
+        grid-area: offer;
+    }
+    .events{
+        grid-area: events;
+    }
+
+    /* **********************************APPLYPAGE************************************ */
+    .apply-main{
+        max-width: 900px;
+        margin-top: 2rem;
+    }
+    .designOne{
+        display: grid;
+        justify-content: center;
+    }
+    
 
 }

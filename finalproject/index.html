@@ -9,8 +9,8 @@
 
         <meta property="og:title" content=" Home Page of Martha's e-Skills center - WDD231 - Frontend Web Development 1">
         <meta property="og:description" content="The first place and first impression of the site where events, different skill-sets and call to action are displayed">
-        <meta property="og:image" content="https://marthagram.github.io/wdd231/chamber/images/niger-agro-webp" >
-        <meta property="og:url" content="https://github.io/marthagram/wdd231/week6-project">
+        <meta property="og:image" content="https://marthagram.github.io/wdd231/finalproject/images/creative-writing.webp" >
+        <meta property="og:url" content="https://github.io/marthagram/wdd231/finalproject">
 
 
     
@@ -19,7 +19,9 @@
 
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/date.js" defer></script>
+        <script src="scripts/local-storage.js" defer></script>
         <script src="scripts/skills.mjs" type="module"></script>
+      
 
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +33,7 @@
 
     <body>
         <header>
-            <img src="images/backpack2.svg" alt="picture of the site logo" width="16" height="16">
+            <img src="images/backpack2.svg" alt="picture of the site logo" width="50" height="50">
             <h1>Martha's e-Skill center and Physical Training Classes, Niger State</h1>
            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
 
@@ -48,51 +50,54 @@
                         <a href="apply.html">Apply</a>
                     </li>
             </ul>
-            </nav>
+        </nav>
+        
         <main class="index-main">
            <div class="first-div">
-             <picture>
-                        
+                <picture>
                         <source srcset="images/large-hero-image.webp" media="(min-width: 600px)">
                         <img  class="heroimage" src="images/small-hero-image.webp" alt="picture of heroimage of the landing page" width="300" height="200" >
-                    </picture>
+                </picture>
             
                 
                 <h2><i>Welcome to Martha's e-Skills' and in-person Training Center</i></h2>
            </div>
 
-           <div class="offer">
-                <h2>What We Offer</h2>
-                <h3>At [Your Organization Name], we are committed to empowering individuals through a diverse range of skills. Our offerings include: </h3>
-                <ul>
-                    <li>
-                    <strong>Online Courses:</strong> Dive into flexible, self-paced learning with our coding bootcamps, entrepreneurship workshops, language classes, and more. Learn from expert instructors through engaging video tutorials, live webinars, and interactive modules.
-                    </li>
 
-                    <li><strong>Physical Training:</strong> Experience hands-on learning with our in-person workshops and training sessions. Whether it's mastering coding techniques, developing entrepreneurial skills, or enhancing language proficiency, our physical classes provide an immersive, supportive environment.
-                    </li>
-                    <li>
-                    <strong>Comprehensive Skill Development:</strong> Our curriculum covers a broad spectrum of fields, from tech and business to creative arts. We aim to equip youths and individuals in Nigeria with the tools they need to become self-reliant and thrive in their careers.
-                    </li>
-                </ul>
+           <div class="second-div">
+                <div class="offer">
+                        <h2>What We Offer</h2>
+                        <h3>At Martha's e-Skills' and in-person Training Center, we are committed to empowering individuals through a diverse range of skills. Our offerings include: </h3>
+                        <ul>
+                            <li>
+                            <strong>Online Courses:</strong> Dive into flexible, self-paced learning with our coding bootcamps, entrepreneurship workshops, language classes, and more. Learn from expert instructors through engaging video tutorials, live webinars, and interactive modules.
+                            </li>
+
+                            <li><strong>Physical Training:</strong> Experience hands-on learning with our in-person workshops and training sessions. Whether it's mastering coding techniques, developing entrepreneurial skills, or enhancing language proficiency, our physical classes provide an immersive, supportive environment.
+                            </li>
+                            <li>
+                            <strong>Comprehensive Skill Development:</strong> Our curriculum covers a broad spectrum of fields, from tech and business to creative arts. We aim to equip youths and individuals in Nigeria with the tools they need to become self-reliant and thrive in their careers.
+                            </li>
+                        </ul>
+                </div>
+            
+                <div class="events">
+                        <h2>Upcoming Events</h2>
+
+                        <h3>At Martha's e-Skills' and in-person Training Center, we host a variety of events designed to enhance your learning and professional growth. Join us for: </h3>
+
+                        <p>Workshops: Hands-on, interactive sessions where you can apply new skills in real time. Topics include coding, entrepreneurship, and more. </p>
+
+                        <p>Webinars: Engage with industry experts from the comfort of your home. Our live webinars cover a wide range of topics, providing valuable insights and Q&A opportunities. </p>
+
+                        <p>Seminars & Conferences: Participate in larger gatherings that bring together thought leaders, professionals, and peers. Gain deeper knowledge and network with like-minded individuals.</p>
+
+                        <p>Networking Opportunities: Connect with fellow learners, mentors, and industry experts. Our events are designed to foster collaboration and growth. </p>
+
+                        <span>Stay tuned for our calendar of events and join us on this journey of skill development and empowerment! </span>
+                </div>
            </div>
-      
-           <div class="events">
-                <h2>Upcoming Events</h2>
 
-                <h3>At [Your Organization Name], we host a variety of events designed to enhance your learning and professional growth. Join us for: </h3>
-
-                <p>Workshops: Hands-on, interactive sessions where you can apply new skills in real time. Topics include coding, entrepreneurship, and more. </p>
-
-                <p>Webinars: Engage with industry experts from the comfort of your home. Our live webinars cover a wide range of topics, providing valuable insights and Q&A opportunities. </p>
-
-                <p>Seminars & Conferences: Participate in larger gatherings that bring together thought leaders, professionals, and peers. Gain deeper knowledge and network with like-minded individuals.</p>
-
-                <p>Networking Opportunities: Connect with fellow learners, mentors, and industry experts. Our events are designed to foster collaboration and growth. </p>
-
-                <span>Stay tuned for our calendar of events and join us on this journey of skill development and empowerment! </span>
-           </div>
-           
            <div id="skills-container"></div>
 
            <dialog id="mydialog">
@@ -102,19 +107,22 @@
             </div>
             <p></p>
             </dialog>
-            <div class="CTA">
+
+            <p id="visit-count"></p>
+            <div class="CTA" id="cta">
                 <button id="apply-button">Click Here to Apply</button>
                 <span>Or</span>
                 <button id="about-us-button">Visit Our About Us page</button>
             </div>
+
         </main>
-  <footer>
+        <footer>
             <div class="first">
-                <div>
-                     <h3>Martha's e-skill and physical training classes</h3>
+                <div class="inner-of-first">
+                    <h3>Martha's e-skill and physical training classes</h3>
                     <p class="address">Madallah, Odogwu Avenue, Niger state</p>
                     <a href="mailto:mrsmartha.otas@gmail.com">nigerstate.cc@gmail.com</a>
-                    <a href="tel:+2348101526261">+2348101526261</a>
+                    <a href="tel:+2348101526261">Call Us On: +2348101526261</a>
                 </div>
                    
 
