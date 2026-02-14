@@ -33,7 +33,8 @@
     .aboutus-main{
         display: grid;
         grid-template-areas:
-        "aboutus comments";
+        "aboutus comments"
+        "image image";
         gap: .8rem;
     }
 
@@ -42,6 +43,10 @@
     }
     .comments{
         grid-area: comments;
+    }
+    .aboutus-main img{
+        grid-area: image;
+        justify-self: center;
     }
     /* *****************************HomePAge************************************ */
     .second-div{
