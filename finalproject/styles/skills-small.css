@@ -146,10 +146,13 @@ h1, h2, h3, header, footer {
     
 }
 
+ .aboutus-main{
+    display: grid;
+ }
 .aboutus-main img{
     width:70%;
     height: auto;
-    justify-content: center;
+    justify-self: center;
 }
 
 #skills-container{
