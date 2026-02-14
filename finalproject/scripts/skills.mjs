@@ -7,6 +7,8 @@ async function getMembersData() {
       const response = await fetch(filePath);
       if (response.ok) {
         const data = await response.json();
+        console.log(data.skills); 
+
         displayCards(data.skills);
         // If JSON has wrapper object:
         // displayCards(data.skills);
@@ -14,7 +16,9 @@ async function getMembersData() {
         // If JSON is direct array:
         // displayCards(data);
 
-      } else {
+      } 
+      
+      else {
           throw Error(await response.text());
       }
     } catch (error) {
