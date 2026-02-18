@@ -378,6 +378,7 @@ input:required:valid{
 
 .details, .thanks{
     color:var(--accent2);
+    font-size: 1.5rem;
 }
 
 
